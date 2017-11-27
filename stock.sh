@@ -15,7 +15,7 @@ fi
 done
 
 #Calculate the slope of the curve for each stock using linear regression
-echo "#Ticker Slope R2" > stats.log
+echo "#Ticker Slope R2" > stats.log 
 
 for i in `ls -lrtx1 *.csv`; do
 	name=`echo $i | rev | cut -f2- -d"." | rev`
